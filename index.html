@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Fiesta de los 20!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            background-color: #ffdd57;
+            padding: 20px;
+        }
+        h1 {
+            color: #d81b60;
+            font-size: 40px;
+        }
+        .meme {
+            width: 70%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .botones {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .si {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 ¡Cumplo 20 años! 🎂</h1>
+    <p>¡Estás oficialmente invitado a una Carnita Asada! 😎</p>
+    <p><b>Fecha:</b> Mañana</p>
+    <p><b>Hora:</b> 4:00 PM</p>
+    <p><b>Lugar:</b> Mi casa 🏠 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.3256606462014!2d-100.13393992514088!3d25.858757004588895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662ee315ed2d345%3A0xdd5ee11ee2b127b5!2sAv.%20San%20Juan%20434%2C%2065776%20Valle%20de%20Santa%20Elena%2C%20N.L.!5e0!3m2!1ses!2smx!4v1743265773418!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    
+    <img class="meme" src="meme/meme1.jpg" alt="Meme de fiesta">
+
+    <h2>¿Vas a venir o te lo perderás? 🤔</h2>
+    
+    <div class="botones">
+        <button class="si" onclick="confirmarAsistencia('Sí, voy pinche puta')">¡Sí, voy pinche puta! 🚀</button>
+        <button class="no" onclick="confirmarAsistencia('No, soy joto')">No puedo soy joto😢</button>
+    </div>
+
+    <script>
+        function confirmarAsistencia(respuesta) {
+            let numeroWhatsApp = "8131731618"; // Reemplaza con tu número de WhatsApp
+            let mensaje = `Hola, confirmo que ${respuesta} a tu fiesta 🎉`;
+            let url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
